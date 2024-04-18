@@ -42,14 +42,19 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+        
+        // 'urlManager' => [
+        //     'enablePrettyUrl' => true,
+        //     'showScriptName' => false,
+        //     'rules' => [
+        //         [
+        //             'pattern' => 'testeknis',
+        //             'route'   => 'site/testeknis',
+        //             'suffix'  => '',
+        //         ],
+        //     ],
+        // ],
+        
     ],
     'params' => $params,
 ];

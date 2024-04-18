@@ -40,18 +40,21 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
-                : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
-                    . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->username . ')',
-                        ['class' => 'nav-link btn btn-link logout']
-                    )
-                    . Html::endForm()
-                    . '</li>'
+            ['label' => 'Donation', 'url' => ['/donation/index']],
+            ['label' => 'Donor', 'url' => ['/donor/index']],
+            ['label' => 'Branch', 'url' => ['/branch/index']],
+            ['label' => 'Tes Teknis', 'url' => ['/site/tes-teknis']],
+            // ['label' => 'Contact', 'url' => ['/site/contact']],
+            // Yii::$app->user->isGuest
+            //     ? ['label' => 'Login', 'url' => ['/site/login']]
+            //     : '<li class="nav-item">'
+            //         . Html::beginForm(['/site/logout'])
+            //         . Html::submitButton(
+            //             'Logout (' . Yii::$app->user->identity->username . ')',
+            //             ['class' => 'nav-link btn btn-link logout']
+            //         )
+            //         . Html::endForm()
+            //         . '</li>'
         ]
     ]);
     NavBar::end();

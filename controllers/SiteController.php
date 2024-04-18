@@ -64,6 +64,7 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+
     /**
      * Login action.
      *
@@ -127,7 +128,6 @@ class SiteController extends Controller
     }
     
     public function actionTesTeknis(){
-        $hello= "Jawabannya di sini";
-        return $hello;
+        return $this->render('testeknis');
     }
 }
